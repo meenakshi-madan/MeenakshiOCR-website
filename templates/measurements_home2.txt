@@ -1,0 +1,39 @@
+download button
+starts at (59,151)
+197x75
+
+quick links
+69,704
+231x254
+
+What's new
+363,704
+299x254
+
+Reviews
+722,704
+216x254
+
+info
+50,234
+217x114
+
+description
+702,123
+265x456
+
+gallery
+22,396
+656x174
+
+gallery smaller
+225,396
+454x175
+
+description smaller
+702,164
+265x409
+
+header
+40,15
+933x87

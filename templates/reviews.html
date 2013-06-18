@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<title>Too Lazy To Type -  Reviews</title>
+		<script language="javascript" type="text/javascript">
+			$(document).ready(function()
+			{
+			  $('tr:even').css('background-color', '#1ec4ff');
+			  $('tr:odd').css('background-color', '#00d7ba');
+			});
+		</script>
+
+		<style>
+		
+						* {
+			   margin: 0px;
+			   padding: 0px;
+			}
+		
+			@font-face {
+				font-family: caviar_dreams;
+				src: url('misc/CaviarDreamsBold.ttf');
+			}
+			
+			tr:nth-child(even) {background: #1ec4ff}
+			tr:nth-child(odd) {background: #00d7ba}
+		
+			body {
+				font-family: caviar_dreams;
+				text-align:justify;
+				background-color: #929aa0;
+				}
+		
+			#container {
+				position: relative;
+				background-color: #e5f1fb;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width:1000px;
+			}
+			
+			#header {
+				border: none;
+				top: 0px;
+			}
+			
+			.eader {
+				position: absolute;
+				top: 0px;
+				left: 26px;
+				width: 533px;
+				height: 89px;
+				background: none;
+				border: none;
+			}
+			
+			.date {
+				color: #e5f1fb;
+				text-align: right;
+			}
+			
+			.user {
+				color: #494949;
+				text-align: left;
+			}
+			
+			
+			.content {
+				color: #000000;
+				text-align: justify;
+			}
+			
+			#reviews {
+				width: 100%;
+			}
+			
+			#fbLike {
+				position: absolute;
+				top: 40px;
+				left: 575px;
+			}
+			
+			
+			#btnHeader {
+				position: absolute;
+				top: 0px;
+				left: 26px;
+				width: 533px;
+				height: 89px;
+				background: none;
+				border: none;
+			}
+			
+		</style>
+	
+	
+	</head>
+	
+	<div id="container">
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		<div id="fbLike" class="fb-like" data-href="https://www.facebook.com/pages/Too-Lazy-To-Type/162843770536174" data-send="true" data-layout="button_count" data-width="150" data-show-faces="false" data-font="verdana"></div>
+		
+				<img src="img/header5.png" />
+		<form method="post" action="/">
+			<input type="submit" id="btnHeader" value="" />
+		</form>
+		
+		<h2 style="text-align: center; color: #4c4d4f;">User reviews for Too Lazy To Type</h2>
+		<h6 style="text-align: center; font-style:italic; color: #4c4d4f;">To discourage spamming, you can submit a review only through the app.</h6><br /> <br />
+
+		<table id="reviews" cellspacing="0">
+			{% for review in reviews %}
+				<tr><th class="user">{% if review.user %}{{review.user}}{% else %}<i>Anonymous</i>{% endif %}</th>
+					<td class="date">{{review.created|datetimeformat}}</td>
+				</tr>
+				<tr>
+					<td class="content" colspan="2">{{review.content}}</td>
+				</tr>
+			{% endfor %}
+		</table>
+		
+	</div>
+	
+	
+	<body>
+	</body>
+</html>

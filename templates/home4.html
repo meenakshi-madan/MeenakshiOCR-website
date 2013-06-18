@@ -1,0 +1,336 @@
+<html>
+	<head>
+		<title>Too Lazy To Type</title>
+	
+		<script language="javascript" type="text/javascript" src="/jquery/jquery-1.3.2.min.js"></script>
+		<script language="javascript" type="text/javascript" src="/jquery/jquery.slidingGallery-1.2.min.js"></script>
+		<script language="javascript" type="text/javascript">
+			$(function() {
+				var zoomFunc = function(dimension) {
+					return dimension * 4;
+				}
+				var shrinkFunc = function(dimension) {
+					return dimension * 0.25;
+				}
+				$('div.gallery img').slidingGallery({'slideSpeed':'slow','Lzoom':zoomFunc, 'Pzoom':zoomFunc,'Lshrink':shrinkFunc,'Pshrink':shrinkFunc, 'container': $('div.gallery'), 'Pheight':170, 'Pwidth':128});
+			});
+		</script>
+
+		<style>
+		
+			* {
+			   margin: 0px;
+			   padding: 0px;
+			}
+		
+			@font-face {
+				font-family: caviar_dreams;
+				src: url('misc/CaviarDreamsBold.ttf');
+			}
+		
+			body {
+				font-family: caviar_dreams;
+				text-align:justify;
+				//background-image:url('img/webtreats_metal_4-512px.jpg');
+				background-color: #929aa0;
+				}
+		
+			#container {
+				position: relative;
+				background-image:url('img/homeBG_6.png');
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				height:1000px;
+				width:1000px;
+			}
+
+			#btnDownload {
+				position: absolute;
+				top: 151px;
+				left: 59px;
+				width: 197px;
+				height: 75px;
+				background: none;
+				border: none;
+				cursor: hand; cursor: pointer;
+			}
+			
+			#fbLike {
+				position: absolute;
+				top: 40px;
+				left: 575px;
+			}
+			
+			#btnHeader {
+				position: absolute;
+				top: 0px;
+				left: 26px;
+				width: 533px;
+				height: 89px;
+				background: none;
+				border: none;
+			}
+			
+			
+			
+			#info {
+				position: absolute;
+				top: 234px;
+				left: 50px;
+				width: 217px;
+				height: 114px;
+			}
+			
+			
+			#quickLinks {
+				position: absolute;
+				top: 704px;
+				left: 69px;
+				width: 231px;
+				height: 254px;
+				text-align:center;
+			}
+			
+			
+			#whatsNew {
+				position: absolute;
+				top: 704px;
+				left: 363px;
+				width: 299px;
+				height: 254px;
+			}
+			
+			
+			#reviews {
+				position: absolute;
+				top: 704px;
+				left: 722px;
+				width: 216px;
+				height: 254px;
+			}
+			
+			#gallery, .gallery {
+				position: absolute;
+				top: 396px;
+				left: 225px;
+				width: 454px;
+				height: 174px;
+			}
+			
+			
+			#description {
+				position: absolute;
+				top: 164px;
+				left: 702px;
+				width: 265px;
+				height: 409px;
+				background: none;
+				border: none;
+				color: #afd7d7;
+			}
+			
+			
+
+			
+			#quickLinks a:link, #quickLinks a:visited {
+				color: #545558;
+			}
+			
+			#quickLinks a:hover {
+				color: #FFFFFF;
+			}
+			
+			ul {padding:0px;
+				list-style: none;}
+			.ul {
+				margin-left: 5px;
+				margin-right: 0px;
+				padding-left: 10px;
+				padding-right: 0px;
+				list-style: none;
+			}
+
+			ul.tick li:before{
+				 content: "\2713\a0";
+			}
+			
+			ul.star li:before{
+				 content: "\2606\a0";
+			}
+			
+			
+			#header a:link, #header a:visited  {
+				color: white;
+			}
+			
+			#header a:hover {
+				color: #b0e1ff;
+			}
+			
+			.hhome {
+				position: absolute;
+				top: 82px;
+				left: 92px;
+				width: 159px;
+				height: 22px;
+				background: none;
+				border: none;
+				color: white;
+				text-align: center;
+			}
+			
+			.hdownload {
+				position: absolute;
+				top: 82px;
+				left: 323px;
+				width: 159px;
+				height: 22px;
+				background: none;
+				border: none;
+				color: white;
+				text-align: center;
+			}
+			
+			.hforum {
+				position: absolute;
+				top: 82px;
+				left: 567px;
+				width: 159px;
+				height: 22px;
+				background: none;
+				border: none;
+				color: white;
+				text-align: center;
+			}
+			
+			
+		</style>
+	
+	
+	</head>
+	<body>
+		
+	<div id="container">
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		<div id="fbLike" class="fb-like" data-href="https://www.facebook.com/pages/Too-Lazy-To-Type/162843770536174" data-send="true" data-layout="button_count" data-width="150" data-show-faces="false" data-font="verdana"></div>
+	
+	
+		<!--<form method="post" action="/">
+			<input type="submit" id="btnHeader" value="" onClick="parent.location='/'" />
+		</form>-->
+		
+		<div id="header">
+			<a href="/" class="hhome">Home</a>
+			<a href="public/MeenakshiOCR.apk" class="hdownload">Download</a>
+			<a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type" class="hforum">Forum</a>
+			
+		</div>
+		
+		
+		
+		<form method="get" action="public/MeenakshiOCR.apk">
+			<input type="submit" id="btnDownload" value="" />
+		</form>
+		
+		
+		<!--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmeenakshi-ocr.appspot.com/&amp;layout=box_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:80px;" allowTransparency="true"></iframe><style>.fbook{position: absolute; font-color:#ddd; top:-1668px; font-size:10;}</style></style><a href="http://www.howtoaddlikebutton.com" class="fbook">add facebook like button 2013</a><style>.fbook-style_map:initreaction=10false_attempt10-border</style> <a href="https://www.facebook.com/pages/Nagelstudio-Hamburg-Alexandra-Ciolea/169816393062045" class="fbook">Nagelstudio Hamburg Alexandra Ciolea</a><style>closemap"init"if=fb_connect-start="25"check_bandwith</style>-->
+		
+		<div id="info">
+			<b>High accuracy Android OCR app with features such as save, copy to clipboard, share, google, sms, recent history, etc.</b>
+		</div>
+		
+		<div id="description">
+			<ul class="tick">
+				<li>Instant text from images</li>
+				<li>Share, save, copy, sms, search</li>
+				<li>Attractive sci-fi interface</li>
+				<li>Simple, light, fast</li>
+				<li>Save time, do more</li>
+				<li>2.2 Froyo or higher</li>
+				<li>FREE and open source</li>
+			</ul>
+			<br />
+			Found interesting text on a poster, book, notice board...? Don't want to type it/hunt for a scanner? 
+			<u>This is the app you need!</u>
+			Feed it an image and get INSTANT TEXT.
+			<br />
+			<br/>
+			Click download (top-left) to get the app
+			<br /><br />
+			Visit the links below for more information
+		</div>
+		
+		
+		<div class="gallery" id="gallery">
+			<img src="img/gallery1.png" alt="" layout="portrait" />
+			<img src="img/gallery2.png" class="start" alt="" layout="portrait" />
+			<img src="img/gallery3.png" alt="" layout="portrait" />
+			<img src="img/gallery4.png" alt="" layout="portrait" />
+			<img src="img/gallery5.png" alt="" layout="portrait" />
+			<img src="img/gallery6.png" alt="" layout="portrait" />
+			<img src="img/gallery7.png" alt="" layout="portrait" />
+			<img src="img/gallery8.png" alt="" layout="portrait" />
+			<img src="img/gallery9.png" alt="" layout="portrait" />
+			<img src="img/gallery10.png" alt="" layout="portrait" />
+			<img src="img/gallery11.png" alt="" layout="portrait" />
+			<img src="img/gallery12.png" alt="" layout="portrait" />
+			<img src="img/gallery13.png" alt="" layout="portrait" />
+			<img src="img/gallery14.png" alt="" layout="portrait" />
+			<img src="img/gallery15.png" alt="" layout="portrait" />
+			<img src="img/gallery16.png" alt="" layout="portrait" />
+			<img src="img/gallery17.png" alt="" layout="portrait" />
+			<img src="img/gallery18.png" alt="" layout="portrait" />
+			<img src="img/gallery19.png" alt="" layout="portrait" />
+			<img src="img/gallery20.png" alt="" layout="portrait" />
+			<img src="img/gallery21.png" alt="" layout="portrait" />
+			<img src="img/gallery22.png" alt="" layout="portrait" />
+			<img src="img/gallery23.png" alt="" layout="portrait" />
+		</div>
+
+	
+		
+		<div id="quickLinks" class="quickLinks">
+			<ul>
+				<li><a href="public/MeenakshiOCR.apk">Download (.apk)</a></li>
+				<li><a href="public/UserManual.pdf">User Manual (.pdf)</a></li>
+				<li><a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type/topic?id=2001">FAQ</a></li>
+				<li><a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type">Community</a></li>
+				<li><a href="/reviews">Reviews</a></li>
+				<li><a href="https://www.facebook.com/pages/Too-Lazy-To-Type/162843770536174">Visit us on Facebook</a></li>
+				<li><a href="/dev">Developer Tools</a></li>
+			</ul>
+		</div>
+		
+		
+		<div id="whatsNew">
+				<ul class="star">
+				<li>New Facebook page is up. You can now officially "like" this app and keep tabs on updates</li><br />
+				<li>Forum is now online! Participate and be a part of the community</li><br />
+				<li>See what other users have to say about this app on Reviews</li>
+			</ul>
+		</div>
+		
+		
+		<div id="reviews">
+			<ul>
+				{% for review in reviews %}
+					{% set i=0 %}
+					{% if i<3: %}
+						{{review.content}}<br /><br />
+						{% set i=i+1 %}
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
+	</div>
+	</body>
+</html>

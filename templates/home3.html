@@ -1,0 +1,281 @@
+<html xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+	
+		<script language="javascript" type="text/javascript" src="/jquery/jquery-1.3.2.min.js"></script>
+		<script language="javascript" type="text/javascript" src="/jquery/jquery.slidingGallery-1.2.min.js"></script>
+		<script language="javascript" type="text/javascript">
+			$(function() {
+				var zoomFunc = function(dimension) {
+					return dimension * 4;
+				}
+				var shrinkFunc = function(dimension) {
+					return dimension * 0.25;
+				}
+				$('div.gallery img').slidingGallery({'slideSpeed':'slow','Lzoom':zoomFunc, 'Pzoom':zoomFunc,'Lshrink':shrinkFunc,'Pshrink':shrinkFunc, 'container': $('div.gallery'), 'Pheight':170, 'Pwidth':128});
+			});
+		</script>
+
+		<style>
+		
+			* {
+			   margin: 0px;
+			   padding: 0px;
+			}
+		
+			@font-face {
+				font-family: caviar_dreams;
+				src: url('misc/CaviarDreamsBold.ttf');
+			}
+		
+			body {
+				font-family: caviar_dreams;
+				text-align:justify;
+				background-color: #949494;
+				}
+		
+			#container {
+				position: relative;
+				background-image:url('img/homeBG.png');
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				height:1000px;
+				width:1000px;
+			}
+
+			#btnDownload {
+				position: absolute;
+				top: 151px;
+				left: 59px;
+				width: 197px;
+				height: 75px;
+				background: none;
+				border: none;
+			}
+			
+			
+			#btnHeader {
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				width: 933px;
+				height: 87px;
+				background: none;
+				border: none;
+			}
+			
+			
+			
+			#info {
+				position: absolute;
+				top: 234px;
+				left: 50px;
+				width: 217px;
+				height: 114px;
+			}
+			
+			
+			#quickLinks {
+				position: absolute;
+				top: 704px;
+				left: 69px;
+				width: 231px;
+				height: 254px;
+				text-align:center;
+			}
+			
+			
+			#whatsNew {
+				position: absolute;
+				top: 704px;
+				left: 363px;
+				width: 299px;
+				height: 254px;
+			}
+			
+			
+			#reviews {
+				position: absolute;
+				top: 704px;
+				left: 722px;
+				width: 216px;
+				height: 254px;
+			}
+			
+			#gallery, .gallery {
+				position: absolute;
+				top: 396px;
+				left: 225px;
+				width: 454px;
+				height: 174px;
+			}
+			
+			
+			#description {
+				position: absolute;
+				top: 164px;
+				left: 702px;
+				width: 265px;
+				height: 409px;
+				background: none;
+				border: none;
+				color: #afd7d7;
+			}
+			
+			#fbLike {
+				position: absolute;
+				top: 17px;
+				left: 777px;
+				width: 931px;
+				height: 73px;
+			}
+			
+			a:link, a:visited {
+				color: #545558;
+			}
+			
+			a:hover {
+				color: #FFFFFF;
+			}
+			
+			ul {padding:0px;
+				list-style: none;}
+			.ul {
+				margin-left: 5px;
+				margin-right: 0px;
+				padding-left: 10px;
+				padding-right: 0px;
+				list-style: none;
+			}
+
+			ul.tick li:before{
+				 content: "\2713\a0";
+			}
+			
+			ul.star li:before{
+				 content: "\2606\a0";
+			}
+			
+		</style>
+	
+	
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+	<div id="container">
+	
+		<div id="fbLike">
+			<fb:like href="https://www.facebook.com/pages/Too-Lazy-To-Type/162843770536174" send="true" layout="button_count" width="90" show_faces="false" font="verdana"></fb:like>
+		</div>
+	
+	
+		<form method="get" action="/">
+			<input type="button" id="btnHeader" value="" onClick="/" />
+		</form>
+		
+		
+		<form method="get" action="public/MeenakshiOCR.apk">
+			<input type="submit" id="btnDownload" value="" />
+		</form>
+		
+		
+		<!--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmeenakshi-ocr.appspot.com/&amp;layout=box_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:80px;" allowTransparency="true"></iframe><style>.fbook{position: absolute; font-color:#ddd; top:-1668px; font-size:10;}</style></style><a href="http://www.howtoaddlikebutton.com" class="fbook">add facebook like button 2013</a><style>.fbook-style_map:initreaction=10false_attempt10-border</style> <a href="https://www.facebook.com/pages/Nagelstudio-Hamburg-Alexandra-Ciolea/169816393062045" class="fbook">Nagelstudio Hamburg Alexandra Ciolea</a><style>closemap"init"if=fb_connect-start="25"check_bandwith</style>-->
+		
+		<div id="info">
+			<b>High accuracy Android OCR app with features such as save, copy to clipboard, share, google, sms, recent history, etc.</b>
+		</div>
+		
+		<div id="description">
+			<ul class="tick">
+				<li>Instant text from images</li>
+				<li>Share, save, copy, sms, search</li>
+				<li>Attractive sci-fi interface</li>
+				<li>Simple, light, fast</li>
+				<li>Save time, do more</li>
+				<li>2.2 Froyo or higher</li>
+				<li>FREE and open source</li>
+			</ul>
+			<br />
+			Found interesting text on a poster, book, notice board...? Don't want to type it/hunt for a scanner? 
+			<u>This is the app you need!</u>
+			Feed it an image and get INSTANT TEXT.
+			<br />
+			<br/>
+			Click download (top-left) to get the app
+			<br /><br />
+			Visit the links below for more information
+		</div>
+		
+		
+		<div class="gallery" id="gallery">
+			<img src="img/gallery1.png" alt="" layout="portrait" />
+			<img src="img/gallery2.png" class="start" alt="" layout="portrait" />
+			<img src="img/gallery3.png" alt="" layout="portrait" />
+			<img src="img/gallery4.png" alt="" layout="portrait" />
+			<img src="img/gallery5.png" alt="" layout="portrait" />
+			<img src="img/gallery6.png" alt="" layout="portrait" />
+			<img src="img/gallery7.png" alt="" layout="portrait" />
+			<img src="img/gallery8.png" alt="" layout="portrait" />
+			<img src="img/gallery9.png" alt="" layout="portrait" />
+			<img src="img/gallery10.png" alt="" layout="portrait" />
+			<img src="img/gallery11.png" alt="" layout="portrait" />
+			<img src="img/gallery12.png" alt="" layout="portrait" />
+			<img src="img/gallery13.png" alt="" layout="portrait" />
+			<img src="img/gallery14.png" alt="" layout="portrait" />
+			<img src="img/gallery15.png" alt="" layout="portrait" />
+			<img src="img/gallery16.png" alt="" layout="portrait" />
+			<img src="img/gallery17.png" alt="" layout="portrait" />
+			<img src="img/gallery18.png" alt="" layout="portrait" />
+			<img src="img/gallery19.png" alt="" layout="portrait" />
+			<img src="img/gallery20.png" alt="" layout="portrait" />
+			<img src="img/gallery21.png" alt="" layout="portrait" />
+			<img src="img/gallery22.png" alt="" layout="portrait" />
+			<img src="img/gallery23.png" alt="" layout="portrait" />
+		</div>
+
+	
+		
+		<div id="quickLinks">
+			<ul>
+				<li><a href="public/MeenakshiOCR.apk">Download (.apk)</a></li>
+				<li><a href="">User Manual (.pdf)</a></li>
+				<li><a href="https://bitbucket.org/meenakshimadan/meenakshiocr-ty-project">Source Code (repo)</a></li>
+				<li><a href="">Black Book (.pdf)</a></li>
+				<li><a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type/topic?id=2001">FAQ</a></li>
+				<li><a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type">Community</a></li>
+				<li><a href="/reviews">Reviews</a></li>
+			</ul>
+		</div>
+		
+		
+		<div id="whatsNew">
+				<ul class="star">
+				<li>Forum is now online! Participate and be a part of the community</li><br />
+				<li>See what other users have to say about this app on Reviews</li>
+			</ul>
+		</div>
+		
+		
+		<div id="reviews">
+			<ul>
+				{% for review in reviews %}
+					{% set i=0 %}
+					{% if i<3: %}
+						{{review.content}}<br />
+						{% set i=i+1 %}
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
+	</div>
+	</body>
+</html>

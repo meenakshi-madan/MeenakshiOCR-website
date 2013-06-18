@@ -1,0 +1,233 @@
+<html>
+	<head>
+	
+		<script language="javascript" type="text/javascript" src="/jquery/jquery-1.3.2.min.js"></script>
+		<script language="javascript" type="text/javascript" src="/jquery/jquery.slidingGallery-1.2.min.js"></script>
+		<script language="javascript" type="text/javascript">
+			$(function() {
+				var zoomFunc = function(dimension) {
+					return dimension * 4;
+				}
+				var shrinkFunc = function(dimension) {
+					return dimension * 0.25;
+				}
+				$('div.gallery img').slidingGallery({'slideSpeed':'slow','Lzoom':zoomFunc, 'Pzoom':zoomFunc,'Lshrink':shrinkFunc,'Pshrink':shrinkFunc, 'container': $('div.gallery'), 'Pheight':170, 'Pwidth':128});
+			});
+		</script>
+
+		<style>
+		
+			@font-face {
+				font-family: caviar_dreams;
+				src: url('misc/CaviarDreamsBold.ttf');
+			}
+		
+			body {
+				font-family: caviar_dreams;
+				text-align:justify;
+				background-color: #949494;
+				}
+		
+			#container {
+				position: relative;
+				background-image:url('img/homeBG.png');
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				height:1000px;
+				width:1000px;
+			}
+
+			#btnDownload {
+				position: absolute;
+				top: 151px;
+				left: 59px;
+				width: 197px;
+				height: 75px;
+				background: none;
+				border: none;
+			}
+			
+			
+			#btnHeader {
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				width: 933px;
+				height: 87px;
+				background: none;
+				border: none;
+			}
+			
+			
+			
+			#info {
+				position: absolute;
+				top: 234px;
+				left: 50px;
+				width: 217px;
+				height: 114px;
+			}
+			
+			
+			#quickLinks {
+				position: absolute;
+				top: 704px;
+				left: 69px;
+				width: 231px;
+				height: 254px;
+			}
+			
+			
+			#whatsNew {
+				position: absolute;
+				top: 704px;
+				left: 363px;
+				width: 299px;
+				height: 254px;
+			}
+			
+			
+			#reviews {
+				position: absolute;
+				top: 704px;
+				left: 722px;
+				width: 216px;
+				height: 254px;
+			}
+			
+			#gallery, .gallery {
+				position: absolute;
+				top: 396px;
+				left: 225px;
+				width: 454px;
+				height: 174px;
+			}
+			
+			
+			#description {
+				position: absolute;
+				top: 164px;
+				left: 702px;
+				width: 265px;
+				height: 409px;
+				background: none;
+				border: none;
+				color: #afd7d7;
+			}
+			
+			a:link {
+				color: #545558;
+			}
+			
+			a:hover {
+				color: #FFFFFF;
+			}
+			
+		</style>
+	
+	
+	</head>
+	
+	<div id="container">
+	
+	
+		<form method="get" action="/">
+			<input type="button" id="btnHeader" value="" onClick="/" />
+		</form>
+		
+		
+		<form method="get" action="public/MeenakshiOCR.apk">
+			<input type="submit" id="btnDownload" value="" />
+		</form>
+		
+		<div id="info">
+			<b>High accuracy Android OCR app with features such as save, copy to clipboard, share, google, sms, recent history, etc.</b>
+		</div>
+		
+		<div id="description">
+			Ever feel like you found an <u>interesting piece of text</u> in a book, 
+			a poster, a notice board... 
+			but <u>you don't really want to type</u> it all out? 
+			<u>This is the app you need!</u>
+			All you need to do is click a picture and the app will get the text FOR you!
+			You can then save it or share it, for example, and get back to it whenever you need it. <br />
+			The advantage over using other OCR apps is that it's a <u>simple lightweight</u> app without
+			unnecessary features, <u>Internet connection is optional</u>,
+			and the <u>accuracy is pretty high</u> too.<br /><br />
+			<u>Minimum android version required: 2.2 Froyo</u>
+		</div>
+		
+		
+		<div class="gallery" id="gallery">
+			<img src="img/gallery1.png" alt="" layout="portrait" />
+			<img src="img/gallery2.png" class="start" alt="" layout="portrait" />
+			<img src="img/gallery3.png" alt="" layout="portrait" />
+			<img src="img/gallery4.png" alt="" layout="portrait" />
+			<img src="img/gallery5.png" alt="" layout="portrait" />
+			<img src="img/gallery6.png" alt="" layout="portrait" />
+			<img src="img/gallery7.png" alt="" layout="portrait" />
+			<img src="img/gallery8.png" alt="" layout="portrait" />
+			<img src="img/gallery9.png" alt="" layout="portrait" />
+			<img src="img/gallery10.png" alt="" layout="portrait" />
+			<img src="img/gallery11.png" alt="" layout="portrait" />
+			<img src="img/gallery12.png" alt="" layout="portrait" />
+			<img src="img/gallery13.png" alt="" layout="portrait" />
+			<img src="img/gallery14.png" alt="" layout="portrait" />
+			<img src="img/gallery15.png" alt="" layout="portrait" />
+			<img src="img/gallery16.png" alt="" layout="portrait" />
+			<img src="img/gallery17.png" alt="" layout="portrait" />
+			<img src="img/gallery18.png" alt="" layout="portrait" />
+			<img src="img/gallery19.png" alt="" layout="portrait" />
+			<img src="img/gallery20.png" alt="" layout="portrait" />
+			<img src="img/gallery21.png" alt="" layout="portrait" />
+			<img src="img/gallery22.png" alt="" layout="portrait" />
+			<img src="img/gallery23.png" alt="" layout="portrait" />
+		</div>
+
+	
+		
+		<div id="quickLinks">
+			<ul>
+				<li><a href="">Download</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">User Manual</a></li>
+				<li><a href="">Source Code</a></li>
+				<li><a href="">Black Book</a></li>
+				<li><a href="">Forum</a></li>
+				<li><a href="/reviews">Reviews</a></li>
+			</ul>
+		</div>
+		
+		
+		<div id="whatsNew">
+				<ul>
+				{% for new in news %}
+					{% set i=0 %}
+					{% if i<3: %}
+						<li>{{new.content}}</li>
+						{% set i=i+1 %}
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
+		
+		<div id="reviews">
+			<ul>
+				{% for review in reviews %}
+					{% set i=0 %}
+					{% if i<3: %}
+						{{review.content}}<br />
+						{% set i=i+1 %}
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
+	</div>
+	
+	
+	<body>
+	</body>
+</html>

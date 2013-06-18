@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<style>
+			#container {
+				position: relative;
+				background-image:url('img/homeBG_1.png');
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				height:600px;
+				width:720px;
+			}
+
+			#btnDownload {
+				position: absolute;
+				top: 64px;
+				left: 82px;
+				width: 142px;
+				height: 53px;
+				background: none;
+				border: none;
+			}
+			
+			#info {
+				position: absolute;
+				top: 136px;
+				left: 72px;
+				width: 154px;
+				height: 130px;
+			}
+			
+			
+			#quickLinks {
+				position: absolute;
+				top: 393px;
+				left: 75px;
+				width: 148px;
+				height: 160px;
+			}
+			
+			
+			#whatsNew {
+				position: absolute;
+				top: 393px;
+				left: 267px;
+				width: 194px;
+				height: 160px;
+			}
+			
+			
+			#reviews {
+				position: absolute;
+				top: 393px;
+				left: 504px;
+				width: 140px;
+				height: 160px;
+			}
+			
+			a:link {
+				color: #545558;
+			}
+			
+			a:hover {
+				color: #FFFFFF;
+			}
+			
+		</style>
+	
+	
+	</head>
+	
+	<div id="container">
+		<form method="get" action="public/MeenakshiOCR.apk">
+			<input type="submit" id="btnDownload" value="" />
+		</form>
+		
+		<div id="info">
+			<b>High accuracy Android OCR app with features such as save, copy to clipboard, share, google, sms, recent history, etc.
+		</div>
+		
+		<div id="quickLinks">
+			<ul>
+				<li><a href="">Download</a></li>
+				<li><a href="">User Manual</a></li>
+				<li><a href="">Source Code</a></li>
+				<li><a href="">Black Book</a></li>
+				<li><a href="">Forum</a></li>
+				<li><a href="">Reviews</a></li>
+			</ul>
+		</div>
+		
+		
+		<div id="whatsNew">
+				<ul>
+				{% for new in news %}
+					{% set i=0 %}
+					{% if i<3: %}
+						<li>{{new.content}}</li>
+						{% set i=i+1 %}
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
+		
+		<div id="reviews">
+			<ul>
+				{% for review in reviews %}
+					{% set i=0 %}
+					{% if i<3: %}
+						<li>{{review.content}}</li>
+						{% set i=i+1 %}
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
+	</div>
+	
+	
+	<body>
+	</body>
+</html>

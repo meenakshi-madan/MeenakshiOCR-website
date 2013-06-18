@@ -1,0 +1,394 @@
+<html>
+	<head>
+		<title>Too Lazy To Type</title>
+		
+		<meta name="google-site-verification" content="e9L87vdHMOpX3bLkN7iJO9WiKEOAUUYX8xDkDJ_bxJg" />
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="/jquery/jquery-1.9.0.min.js"></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox main JS and CSS files -->
+		<script type="text/javascript" src="/jquery/jquery.fancybox.js?v=2.1.4"></script>
+		<link rel="stylesheet" type="text/css" href="/jquery/jquery.fancybox.css?v=2.1.4" media="screen" />
+		
+		<!-- Add Thumbnail helper (this is optional) -->
+		<link rel="stylesheet" type="text/css" href="/jquery/jquery.fancybox-thumbs.css?v=1.0.7" />
+		<script type="text/javascript" src="/jquery/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+
+		
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+		
+		<link href="misc/header.css" rel="stylesheet" type="text/css">
+
+		<style>
+		
+			* {
+			   margin: 0px;
+			   padding: 0px;
+			}
+		
+			@font-face {
+				font-family: caviar_dreams;
+				src: url('misc/CaviarDreamsBold.ttf');
+			}
+		
+			body {
+				font-family: caviar_dreams;
+				text-align:justify;
+				//background-image:url('img/webtreats_metal_4-512px.jpg');
+				background-color: #929aa0;
+				}
+		
+			#container {
+				position: relative;
+				background-image:url('img/homeBG.jpg');
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				height:1000px;
+				width:1000px;
+			}
+
+			#btnDownload {
+				position: absolute;
+				top: 151px;
+				left: 59px;
+				width: 197px;
+				height: 75px;
+				background: none;
+				border: none;
+				cursor: hand; cursor: pointer;
+			}
+			
+			
+			
+			#btnHeader {
+				position: absolute;
+				top: 0px;
+				left: 26px;
+				width: 533px;
+				height: 89px;
+				background: none;
+				border: none;
+			}
+			
+			
+			
+			#info {
+				position: absolute;
+				top: 234px;
+				left: 50px;
+				width: 217px;
+				height: 114px;
+			}
+			
+			
+			#quickLinks {
+				position: absolute;
+				top: 704px;
+				left: 69px;
+				width: 231px;
+				height: 254px;
+				//text-align:center;
+			}
+			
+			
+			#whatsNew {
+				position: absolute;
+				top: 704px;
+				left: 363px;
+				width: 299px;
+				height: 254px;
+			}
+			
+			
+			#reviews {
+				position: absolute;
+				top: 704px;
+				left: 722px;
+				width: 216px;
+				height: 254px;
+			}
+			
+			.gallery {
+				position: absolute;
+				top: 396px;
+				left: 250px;
+				width: 454px;
+				height: 174px;
+			}
+			
+			
+			#description {
+				position: absolute;
+				top: 164px;
+				left: 702px;
+				width: 265px;
+				height: 409px;
+				background: none;
+				border: none;
+				color: #afd7d7;
+			}
+			
+			
+
+			
+			#quickLinks a:link, #quickLinks a:visited {
+				color: #545558;
+			}
+			
+			#quickLinks a:hover {
+				color: #FFFFFF;
+			}
+			
+			ul {padding:0px;
+				list-style: none;}
+			.ul {
+				margin-left: 5px;
+				margin-right: 0px;
+				padding-left: 10px;
+				padding-right: 0px;
+				list-style: none;
+			}
+
+			ul.tick li:before{
+				 content: "\2713\a0";
+			}
+			
+			ul.star li:before{
+				 content: "\2606\a0";
+			}
+			
+			
+			
+			
+			
+		</style>
+	
+	
+	</head>
+	<body>
+		
+	<div id="container">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<div id="header">
+			<a href="/" class="hhome">Home</a>
+			<a href="public/MeenakshiOCR.apk" class="hdownload">Download</a>
+			<a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type" class="hforum">Forum</a>
+			<div class="fb-like" data-href="https://www.facebook.com/pages/Too-Lazy-To-Type/162843770536174" data-send="true" data-layout="box_count" data-width="100" data-show-faces="false" data-font="segoe ui"></div>
+		</div>
+		
+		
+		
+		<form method="get" action="public/MeenakshiOCR.apk">
+			<input type="submit" id="btnDownload" value="" />
+		</form>
+		
+		
+		<!--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmeenakshi-ocr.appspot.com/&amp;layout=box_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:80px;" allowTransparency="true"></iframe><style>.fbook{position: absolute; font-color:#ddd; top:-1668px; font-size:10;}</style></style><a href="http://www.howtoaddlikebutton.com" class="fbook">add facebook like button 2013</a><style>.fbook-style_map:initreaction=10false_attempt10-border</style> <a href="https://www.facebook.com/pages/Nagelstudio-Hamburg-Alexandra-Ciolea/169816393062045" class="fbook">Nagelstudio Hamburg Alexandra Ciolea</a><style>closemap"init"if=fb_connect-start="25"check_bandwith</style>-->
+		
+		<div id="info">
+			<b>High accuracy Android OCR app with features such as save, copy to clipboard, share, google, sms, recent history, etc.</b>
+		</div>
+		
+		<div id="description">
+			<ul class="tick">
+				<li>Instant text from images</li>
+				<li>Share, save, copy, sms, search</li>
+				<li>Attractive sci-fi interface</li>
+				<li>Simple, light, fast</li>
+				<li>Save time, do more</li>
+				<li>2.2 Froyo or higher</li>
+				<li>FREE and open source</li>
+			</ul>
+			<br />
+			Found interesting text on a poster, book, notice board...? Don't want to type it/hunt for a scanner? 
+			<u>This is the app you need!</u>
+			Feed it an image and get INSTANT TEXT.
+			<br />
+			<br/>
+			Click download (top-left) to get the app
+			<br /><br />
+			Visit the links below for more information
+		</div>
+		
+		<div class="gallery">
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery2.jpg"><img src="img/gallery2_s.jpg" alt="" /></a>
+
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery7.jpg"><img src="img/gallery7_s.jpg" alt="" /></a>
+			
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery14.jpg"><img src="img/gallery14_s.jpg" alt="" /></a>
+
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery1.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery3.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery4.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery5.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery6.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery8.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery9.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery10.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery11.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery12.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery13.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery15.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery16.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery18.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery17.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery19.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery20.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery21.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery22.jpg"></a>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/gallery23.jpg"></a>
+			
+		</div>
+		
+
+	
+		
+		<div id="quickLinks" class="quickLinks">
+			<ul class="star">
+				<li><a href="public/MeenakshiOCR.apk">Download (.apk)</a></li><br />
+				<li><a href="public/UserManual.pdf">User Manual (.pdf)</a></li><br />
+				<li><a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type/topic?id=2001">FAQ</a></li><br />
+				<li><a href="http://meenakshi-ocr-fofou.appspot.com/Too-Lazy-To-Type">Community</a></li><br />
+				<li><a href="/reviews">Reviews</a></li><br />
+				<li><a href="https://www.facebook.com/pages/Too-Lazy-To-Type/162843770536174">Visit us on Facebook</a></li><br />
+				<li><a href="/dev">Developer Tools</a></li><br />
+			</ul>
+		</div>
+		
+		
+		<div id="whatsNew">
+				<ul class="star">
+				<li>New Facebook page is up. You can now officially "like" this app and keep tabs on updates</li><br />
+				<li>Forum is now online! Participate and be a part of the community</li><br />
+				<li>See what other users have to say about this app on Reviews</li>
+			</ul>
+		</div>
+		
+		
+		<div id="reviews">
+			<ul class="star">
+				{% set i=0 %}
+				{% for review in reviews %}
+					{% if i<3: %}
+						<li><u>{{review.user}}</u>: {{review.content}}</li><br />
+						{% set i=i+1 %}
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
+	</div>
+	</body>
+</html>
